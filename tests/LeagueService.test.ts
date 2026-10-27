@@ -106,6 +106,14 @@ describe('LeagueService results', () => {
     expect(r).toMatchObject({ homeGoals: 0, awayGoals: 3, forfeitBy: 'T1' });
     expect(service.fixture('F1').status).toBe('forfeit');
   });
+
+  it('awards the win to the home side when the away team forfeits (R5)', () => {
+    const service = serviceAt('2026-11-18T21:00', played);
+    const r = service.recordForfeit('F1', 'away');
+    expect(r).toMatchObject({ homeGoals: 3, awayGoals: 0, forfeitBy: 'T2' });
+    expect(service.fixture('F1').status).toBe('forfeit');
+    expect(service.standings()[0]).toMatchObject({ teamId: 'T1', points: 3, won: 1 });
+  });
 });
 
 describe('LeagueService nextNight', () => {

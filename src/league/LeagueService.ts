@@ -104,12 +104,14 @@ export class LeagueService {
     return this.store({ fixtureId: fixture.id, homeGoals, awayGoals }, 'played');
   }
 
-  /** Record a forfeit: 0-3 against the side that did not show (R5). */
+  /** Record a forfeit: a 3-0 win for the side that did show (R5). */
   recordForfeit(fixtureId: string, side: ForfeitSide): Result {
     const fixture = this.fixture(fixtureId);
     this.assertPlayed(fixture);
     const forfeitBy = side === 'home' ? fixture.homeId : fixture.awayId;
-    return this.store({ fixtureId: fixture.id, homeGoals: 0, awayGoals: FORFEIT_GOALS, forfeitBy }, 'forfeit');
+    const homeGoals = side === 'home' ? 0 : FORFEIT_GOALS;
+    const awayGoals = side === 'home' ? FORFEIT_GOALS : 0;
+    return this.store({ fixtureId: fixture.id, homeGoals, awayGoals, forfeitBy }, 'forfeit');
   }
 
   standings(): Standing[] {
