@@ -1,0 +1,343 @@
+{
+  "name": "Cascadia Intramural Futsal, Fall 2026",
+  "settings": {
+    "pointsForWin": 3,
+    "pointsForDraw": 1,
+    "courts": [
+      "A",
+      "B"
+    ],
+    "slotsPerNight": [
+      "18:00",
+      "19:00",
+      "20:00"
+    ],
+    "matchNights": [
+      "2026-11-18",
+      "2026-11-25",
+      "2026-12-02",
+      "2026-12-09"
+    ],
+    "matchMinutes": 50
+  },
+  "teams": [
+    {
+      "id": "T1",
+      "name": "Otters",
+      "captain": "Maya Lindqvist"
+    },
+    {
+      "id": "T2",
+      "name": "Herons",
+      "captain": "Devin Okafor"
+    },
+    {
+      "id": "T3",
+      "name": "Marmots",
+      "captain": "Priya Raman"
+    },
+    {
+      "id": "T4",
+      "name": "Sockeye",
+      "captain": "Tomas Beltran"
+    },
+    {
+      "id": "T5",
+      "name": "Lumberjacks",
+      "captain": "Jesse Whitcomb"
+    },
+    {
+      "id": "T6",
+      "name": "Sea Lions",
+      "captain": "Hana Suzuki"
+    },
+    {
+      "id": "T7",
+      "name": "Volcanoes",
+      "captain": "Caleb Nguyen"
+    }
+  ],
+  "rounds": [
+    {
+      "number": 1,
+      "byeTeamId": "T1"
+    },
+    {
+      "number": 2,
+      "byeTeamId": "T1"
+    },
+    {
+      "number": 3,
+      "byeTeamId": "T1"
+    },
+    {
+      "number": 4,
+      "byeTeamId": "T1"
+    },
+    {
+      "number": 5,
+      "byeTeamId": "T1"
+    },
+    {
+      "number": 6,
+      "byeTeamId": "T1"
+    },
+    {
+      "number": 7,
+      "byeTeamId": "T1"
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "F1",
+      "round": 1,
+      "homeId": "T2",
+      "awayId": "T7",
+      "court": "A",
+      "slot": "2026-11-18T18:00",
+      "status": "played"
+    },
+    {
+      "id": "F2",
+      "round": 1,
+      "homeId": "T6",
+      "awayId": "T3",
+      "court": "B",
+      "slot": "2026-11-18T18:00",
+      "status": "played"
+    },
+    {
+      "id": "F3",
+      "round": 1,
+      "homeId": "T4",
+      "awayId": "T5",
+      "court": "A",
+      "slot": "2026-11-18T19:00",
+      "status": "played"
+    },
+    {
+      "id": "F4",
+      "round": 2,
+      "homeId": "T7",
+      "awayId": "T1",
+      "court": "B",
+      "slot": "2026-11-18T19:00",
+      "status": "played"
+    },
+    {
+      "id": "F5",
+      "round": 2,
+      "homeId": "T5",
+      "awayId": "T2",
+      "court": "A",
+      "slot": "2026-11-18T20:00",
+      "status": "played"
+    },
+    {
+      "id": "F6",
+      "round": 2,
+      "homeId": "T3",
+      "awayId": "T4",
+      "court": "B",
+      "slot": "2026-11-18T20:00",
+      "status": "played"
+    },
+    {
+      "id": "F7",
+      "round": 3,
+      "homeId": "T1",
+      "awayId": "T6",
+      "court": "A",
+      "slot": "2026-11-25T18:00",
+      "status": "played"
+    },
+    {
+      "id": "F8",
+      "round": 3,
+      "homeId": "T7",
+      "awayId": "T5",
+      "court": "B",
+      "slot": "2026-11-25T18:00",
+      "status": "played"
+    },
+    {
+      "id": "F9",
+      "round": 3,
+      "homeId": "T2",
+      "awayId": "T3",
+      "court": "A",
+      "slot": "2026-11-25T19:00",
+      "status": "played"
+    },
+    {
+      "id": "F10",
+      "round": 4,
+      "homeId": "T5",
+      "awayId": "T1",
+      "court": "B",
+      "slot": "2026-11-25T19:00",
+      "status": "played"
+    },
+    {
+      "id": "F11",
+      "round": 4,
+      "homeId": "T6",
+      "awayId": "T4",
+      "court": "A",
+      "slot": "2026-11-25T20:00",
+      "status": "played"
+    },
+    {
+      "id": "F12",
+      "round": 4,
+      "homeId": "T3",
+      "awayId": "T7",
+      "court": "B",
+      "slot": "2026-11-25T20:00",
+      "status": "played"
+    },
+    {
+      "id": "F13",
+      "round": 5,
+      "homeId": "T1",
+      "awayId": "T4",
+      "court": "A",
+      "slot": "2026-12-02T18:00",
+      "status": "scheduled"
+    },
+    {
+      "id": "F14",
+      "round": 5,
+      "homeId": "T5",
+      "awayId": "T3",
+      "court": "B",
+      "slot": "2026-12-02T18:00",
+      "status": "scheduled"
+    },
+    {
+      "id": "F15",
+      "round": 5,
+      "homeId": "T2",
+      "awayId": "T6",
+      "court": "A",
+      "slot": "2026-12-02T19:00",
+      "status": "scheduled"
+    },
+    {
+      "id": "F16",
+      "round": 6,
+      "homeId": "T3",
+      "awayId": "T1",
+      "court": "B",
+      "slot": "2026-12-02T19:00",
+      "status": "scheduled"
+    },
+    {
+      "id": "F17",
+      "round": 6,
+      "homeId": "T4",
+      "awayId": "T2",
+      "court": "A",
+      "slot": "2026-12-02T20:00",
+      "status": "scheduled"
+    },
+    {
+      "id": "F18",
+      "round": 6,
+      "homeId": "T6",
+      "awayId": "T7",
+      "court": "B",
+      "slot": "2026-12-02T20:00",
+      "status": "scheduled"
+    },
+    {
+      "id": "F19",
+      "round": 7,
+      "homeId": "T1",
+      "awayId": "T2",
+      "court": "A",
+      "slot": "2026-12-09T18:00",
+      "status": "scheduled"
+    },
+    {
+      "id": "F20",
+      "round": 7,
+      "homeId": "T7",
+      "awayId": "T4",
+      "court": "B",
+      "slot": "2026-12-09T18:00",
+      "status": "scheduled"
+    },
+    {
+      "id": "F21",
+      "round": 7,
+      "homeId": "T5",
+      "awayId": "T6",
+      "court": "A",
+      "slot": "2026-12-09T19:00",
+      "status": "scheduled"
+    }
+  ],
+  "results": [
+    {
+      "fixtureId": "F1",
+      "homeGoals": 0,
+      "awayGoals": 3
+    },
+    {
+      "fixtureId": "F2",
+      "homeGoals": 1,
+      "awayGoals": 0
+    },
+    {
+      "fixtureId": "F3",
+      "homeGoals": 0,
+      "awayGoals": 3
+    },
+    {
+      "fixtureId": "F4",
+      "homeGoals": 1,
+      "awayGoals": 2
+    },
+    {
+      "fixtureId": "F5",
+      "homeGoals": 1,
+      "awayGoals": 3
+    },
+    {
+      "fixtureId": "F6",
+      "homeGoals": 2,
+      "awayGoals": 1
+    },
+    {
+      "fixtureId": "F7",
+      "homeGoals": 1,
+      "awayGoals": 2
+    },
+    {
+      "fixtureId": "F8",
+      "homeGoals": 2,
+      "awayGoals": 1
+    },
+    {
+      "fixtureId": "F9",
+      "homeGoals": 3,
+      "awayGoals": 0
+    },
+    {
+      "fixtureId": "F10",
+      "homeGoals": 3,
+      "awayGoals": 3
+    },
+    {
+      "fixtureId": "F11",
+      "homeGoals": 1,
+      "awayGoals": 3
+    },
+    {
+      "fixtureId": "F12",
+      "homeGoals": 1,
+      "awayGoals": 0
+    }
+  ]
+}
